@@ -1,5 +1,4 @@
-# terminal_blog
-BLOG RUNNING FROM TERMINAL
+# BLOG RUNNING FROM TERMINAL
 
 Blog running from terminal, using Python, JS and MongoDB
 
