@@ -1,8 +1,10 @@
 from database import Database
+from models.blog import Blog
 from models.post import Post
 
 Database.initialize()
 
+'''
 post = Post(blog_id="123",
             title="Another great post",
             content="This is some sample content",
@@ -20,3 +22,19 @@ for post in posts:
 #post = Post.from_mongo(id= "c78093310c374388a36fb7dd6f049e97")
 #print(post)
 
+'''
+
+blog = Blog(author="Jose",
+            title="Sample title",
+            description="Sample description")
+
+blog.new_post()
+
+blog.save_to_mongo()
+
+from_database = Blog.from_mongo(blog.id)
+
+
+for post in blog.get_post():
+    print(post)
+    #print(post["title"])
