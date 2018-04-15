@@ -1,4 +1,5 @@
 from database import Database
+from menu import Menu
 from models.blog import Blog
 from models.post import Post
 
@@ -23,7 +24,7 @@ for post in posts:
 #print(post)
 
 '''
-
+'''
 blog = Blog(author="Jose",
             title="Sample title",
             description="Sample description")
@@ -38,3 +39,8 @@ from_database = Blog.from_mongo(blog.id)
 for post in blog.get_post():
     print(post)
     #print(post["title"])
+'''
+
+menu = Menu()
+
+menu.run_menu()
