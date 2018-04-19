@@ -1,6 +1,14 @@
 # BLOG RUNNING FROM TERMINAL
 
-Blog running from terminal, using Python, JS and MongoDB
+This is a simple Blog engine running in terminal built based on the course: https://www.udemy.com/the-complete-python-web-course-learn-by-building-8-apps/ 
 
-Learning Python, JS, MongoDB through following the the following lecture: https://www.youtube.com/watch?v=meu0ITheGBY
+In this project i've built a simple blog posting system that:
+- Set up a mongoDB database.
+- Checks if the user exists in the database (if not it offeres a form to create the first blog).
+- Asks the user whether he/she wants to Read or Write a blog.
+- Based on the answer it enables Reading or Writing a new blog post.
 
+Learnings:
+ - creating project structure
+ - Pyhon object oriented programming (OOP)
+ - mongoDB
