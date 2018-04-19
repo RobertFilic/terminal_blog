@@ -49,6 +49,7 @@ class Menu(object):
             # allow user to pick one
             # display post
         if read_or_write == 'R':
+            print("Which blog would you like to read? {}".format(self.user))
             self._list_blogs()
             self._view_blog()
             pass
@@ -56,6 +57,8 @@ class Menu(object):
         #if write
             # if not, prompt to create new blog
         if read_or_write == 'W':
+            blog = Database.find_one('blogs', {'author': self.user}) # finding author's blog
+            print("Here is your new blog post {} for your blog {}".format(self.user, blog['title']))
             self.user_blog.new_post()
 
         else:
